@@ -26,7 +26,7 @@ public class DroppedXPItemListener implements Listener {
 			Player player = event.getEntity();
 			int droppedEXP = event.getDroppedExp();
 
-			if (!player.hasPermission("DropXPBottle.bypass")) {
+			if (!player.hasPermission("DroppedXPItem.bypass")) {
 
 				if (Config.getInstance().getEnabled() && droppedEXP >= Config.getInstance().getMiniumXP()) {
 
@@ -52,7 +52,7 @@ public class DroppedXPItemListener implements Listener {
 	@EventHandler
 	public void onDXIPlayerUse(PlayerInteractEvent event) {
 
-		if (Config.getInstance().getEnabled() && event.hasItem() && event.getPlayer().hasPermission("DropXPBottle.awardxp")) {
+		if (Config.getInstance().getEnabled() && event.hasItem() && event.getPlayer().hasPermission("DroppedXPItem.awardxp")) {
 			if (getXPTag(event.getItem()) > 0) {
 				run(event.getPlayer(), event.getItem());
 
@@ -68,7 +68,7 @@ public class DroppedXPItemListener implements Listener {
 		if (event.getEntity() instanceof Player) {
 			Player player = (Player) event.getEntity();
 
-			if (Config.getInstance().getEnabled() && Config.getInstance().getAwardXPOnPickup() && player.hasPermission("DropXPBottle.awardxp")) {
+			if (Config.getInstance().getEnabled() && Config.getInstance().getAwardXPOnPickup() && player.hasPermission("DroppedXPItem.awardxp")) {
 				if (getXPTag(event.getItem().getItemStack()) > 0) {
 					run(player, event.getItem().getItemStack());
 

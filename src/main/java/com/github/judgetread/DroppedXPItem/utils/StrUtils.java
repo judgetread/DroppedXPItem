@@ -1,4 +1,4 @@
-package main.java.com.github.judgetread.DropXPBottles.utils;
+package main.java.com.github.judgetread.DroppedXPItem.utils;
 
 import java.util.ArrayList;
 import java.util.List;

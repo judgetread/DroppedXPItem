@@ -9,7 +9,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import main.java.com.github.judgetread.DroppedXPItem.Listeners.DroppedXPItemListener;
-import main.java.com.github.judgetread.DroppedXPItem.commands.CommandManager;
 import main.java.com.github.judgetread.DroppedXPItem.config.Config;
 import main.java.com.github.judgetread.DroppedXPItem.item.DXIItem;
 import main.java.com.github.judgetread.DroppedXPItem.sound.SoundPlayer;
@@ -31,7 +30,6 @@ public class DroppedXPItem extends JavaPlugin {
 
 		if (Config.getInstance().getEnabled()) {
 			SoundPlayer.getInstance();
-			CommandManager.getInstance();
 			Bukkit.getPluginManager().registerEvents(new DroppedXPItemListener(), this);
 		}		
 	}

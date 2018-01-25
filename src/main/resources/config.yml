@@ -14,7 +14,7 @@ Settings:
   # Show Custom name text above the item when item is on the ground.
   Show Custom Name: true
   # Text to display as custom name.
-  Custom Name Text: '&f@playernames &7XP'
+  Custom Name Text: '&e@playernames &6XP'
   # When to award xp.
   # True = xp contained in item will be given to player when they pickup the item.
   # False = player must "use" (right or left click) the item to have xp awarded to them.
