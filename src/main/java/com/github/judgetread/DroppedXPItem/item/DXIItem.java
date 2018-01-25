@@ -45,14 +45,6 @@ public class DXIItem {
 	public ItemStack getDxbItemStack() {
 		return itemStack;
 	}
-
-
-	/**
-	 * @param itemStack the itemStack to set
-	 */
-	public void setItemStack(ItemStack itemStack) {
-		this.itemStack = itemStack;
-	}
 	
 
 }
