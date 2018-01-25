@@ -1,0 +1,69 @@
+Settings:
+  # Color Codes & Unicodes can be used for all text.
+  # Example. \u00A7b\u00A7m\u00A7l---\u00A7r\u00A78\u00A7m\u00A7l[--\u00A7r \u00A7aNo Drop \u00A72Item \u00A7r\u00A78\u00A7m\u00A7l--]\u00A7b\u00A7m\u00A7l---
+  # Example. &b&m&l---&r&8&m&l[--&r &aNo Drop &2Item &r&8&m&l--]&b&m&l---
+  
+  # Placeholders.
+  # Use any of the placeholders below in any text, that placeholder value will get replaced
+  # with its corresponding value.
+  # @playername - gets replaced with the name of the player that died/dropped the xp item.
+  # @droppedxp - the amount of xp that was dropped/contained in the item.
+  
+  # Enable or Disable usage of dxb.
+  Enabled: true
+  # Show Custom name text above the item when item is on the ground.
+  Show Custom Name: true
+  # Text to display as custom name.
+  Custom Name Text: '&f@playernames &7XP'
+  # When to award xp.
+  # True = xp contained in item will be given to player when they pickup the item.
+  # False = player must "use" the item to have xp awarded to them.
+  Award XP on pickup: true
+  # Minimum amount of xp that has to drop when a player dies to drop a DXB item.
+  # Anything lower than this amount, and a DXB will NOT be dropped.
+  Minimum XP: 1
+  # Maximum amount of xp a DXB can contain. If player drops more XP than this
+  # the dDXB item will only contain upto this value. set to -1 for no limit.
+  Maximum XP: -1
+  
+   # Settings related to how the item looks.
+  Item:
+    # The material of the item.
+    Material: 'EXP_BOTTLE'
+    # Size of the item stack. 
+    Amount: 1
+    # The Display name of the item. 
+    Display Name: '&b&m&l-----&r&8&m&l[--&r &f@playernames &7XP Bottle&r&8&m&l--]&b&m&l-----'
+    # The lore text of the item.
+    Lore:
+    - '&bThis item contains the XP remains from when &e@playername'
+    - '&bMeet an unfortunate end.'
+    - '&eClick to claim the XP contain within.'
+    - '&b&m&l--------------------------'
+    
+  # Settings related to sounds
+  Sounds:
+    # Enabled this sound or not.
+    # Play a sound to the player on when xp is awarded.
+    Enabled: true
+    # Sound file to play.
+    # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+    Sound: 'ENTITY_GHAST_SCREAM'
+    # Volume of the playing sound.
+    Volume: 1.0f
+    # Pitch of playing sound
+    Pitch: 1.0f
+     
+    # Settings related to chat messages.
+  Chat:
+    # Enable or disable sending of chat messages..
+    Enabled: true
+    # Message to send to player's chat when they are awarded xp.
+    # from pickingup/using a DXB item.
+    XP Awarded Message:
+    - '&b&m&l---------------------------'
+    - ' &7You just claimed &e@droppedxp &7XP'
+    - '&b&m&l---------------------------'
+    
+    
+    

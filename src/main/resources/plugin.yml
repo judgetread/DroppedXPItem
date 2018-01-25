@@ -1,0 +1,18 @@
+name: DroppedXPItem
+version: 0.1
+description: DroppedXPItem
+author: judgetread
+authors: [judgetread] 
+website: http://github.com/DroppedXPItem
+main: main.java.com.github.judgetread.DroppedXPItem.DroppedXPItem
+commands:
+   DroppedXPItem:
+      description: Item saves players inventory on death.
+      aliases: [dxi, droppedxp]
+permissions:
+    DroppedXPItem.bypass:
+        default: false
+        description: Player will not drop xp as items.
+    DroppedXPItem.awardxp:
+        default: true
+        description: Allows player to pickup/use DroppedXPItem item.
